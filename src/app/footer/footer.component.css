@@ -1,0 +1,47 @@
+.app-footer {
+    background-color: #eee;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Inizialmente adattabile */
+    gap: 1rem;
+    max-width: 100%; /* Cambiato da 1200px a 100% per adattarsi meglio alla larghezza */
+    margin: 0 auto;
+  }
+  
+  .footer-col {
+    padding: 1rem;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  
+  /* Layout mobile: 2 colonne per riga */
+  @media (max-width: 768px) {
+    .footer-grid {
+      grid-template-columns: repeat(2, 1fr); /* Griglia a 2 colonne */
+    }
+  }
+  
+  /* Super piccolo (telefono vecchio o in portrait) */
+  @media (max-width: 400px) {
+    .footer-grid {
+      grid-template-columns: 1fr; /* Griglia a 1 colonna */
+    }
+  }
+  
+  .privacyPolicy{
+    color: #1BA95B;
+    text-decoration: none;
+  }
+  
+  .privacyPolicy:hover{
+    color:#106737 !important;
+    text-decoration: none;
+  }
+  

@@ -1,0 +1,67 @@
+.app-header {
+  color: white;
+  padding: 1rem;
+  position: relative;
+}
+
+.topHeader {
+  position: relative;
+  height: 60px; /* o quanto ti serve */
+}
+
+.cngeiLink {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-left: 1rem;
+  
+}
+
+.cngeiLink a{
+  color: #1BA95B;
+  text-decoration: none;
+}
+
+.cngeiLink a:hover {
+  color: #106737 !important;
+  text-decoration: none;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logoImg {
+  width: 40px;
+}
+
+.bottomHeader{
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.backgroundImage{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.navbar{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-trasparente */
+  -webkit-backdrop-filter: blur(5px);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: none; 
+}

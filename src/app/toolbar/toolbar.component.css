@@ -1,0 +1,25 @@
+:host{
+    display: contents;
+}
+
+::ng-deep .mat-toolbar{
+    background-color: rgba(41, 41, 41, 0) !important;
+  -webkit-backdrop-filter: blur(5px);
+  color: white !important;
+  box-shadow: none;
+  padding: 1rem 2rem;
+}
+
+::ng-deep .mat-icon-button,
+::ng-deep .mat-icon {
+  color: white !important;
+}
+
+
+.chiSiamoUl{
+  display: none;
+}
+
+mat-button{
+  text-label-text-color:white !important;
+}

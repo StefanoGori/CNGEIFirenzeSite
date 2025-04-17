@@ -1,0 +1,35 @@
+<footer class="app-footer">
+    <div class="footer-grid">
+        <div class="footer-col">
+            <a href="https://www.iubenda.com/privacy-policy/805527" title="privacyPolicy" class="privacyPolicy">Privacy Policy</a>
+        </div>
+        <div class="footer-col">
+            <h4>Newsletter</h4>
+            <form [formGroup]="footerFormEmail" (ngSubmit)="onSubmitEmail()">
+                <label for="email">Email address:</label>
+                <input type="email" id="email" formControlName="email" name="email" placeholder="Your email address">
+                <br>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+        <div class="footer-col">
+            <h4>Archivio notizie</h4>
+            <form [formGroup]="footerFormNews">
+                <select id="news" formControlName="news" name="news" (change)="onSubmitNews()">
+                    <option value="" disabled selected>Seleziona il mese</option>
+                    <option *ngFor="let news of news" [value]="news.value">{{ news.label }}</option>
+                </select>
+            </form>        
+        </div>
+        <div class="footer-col">
+            <h4>Segreteria CNGEI Firenze</h4>
+            <h4>Torre del Serpe</h4>
+            <p>
+                Viale Fratelli Rosselli ang. Via Montebello - Firenze
+                Tel./Fax: 055214781 - segreteria&#64;scoutfirenze.it
+                Fermata tram: Porta al Prato
+            </p>
+        </div>
+    </div>
+</footer>
+  
