@@ -65,3 +65,8 @@
 button{
   color:white !important;
 }
+
+.searchButton{
+  margin-left: auto;
+  padding-right: 2.5rem;
+}
