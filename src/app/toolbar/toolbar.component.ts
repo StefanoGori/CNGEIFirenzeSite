@@ -16,4 +16,9 @@ export class ToolbarComponent {
     const chiSiamoUl=document.getElementById('chiSiamoUl');
     chiSiamoUl?.classList.toggle('visible');
   }
+
+  openContributiUl(){
+    const contributiUl=document.getElementById('contributiUl');
+    contributiUl?.classList.toggle('visible');
+  }
 }

@@ -7,17 +7,17 @@
       <li>Gruppi</li>
       <li>Il Clan della Torre</li>
       <li>Sostenitori</li>
-      <li>
-        <button mat-button>Il tuo 5x1000 alla sezione di Firenze del CNGEI</button>
-        <ul class="ContributiUl">
+      <li class="contributiWrapper">
+        <button mat-button (click)="openContributiUl()">Il tuo 5x1000 alla sezione di Firenze del CNGEI</button>
+        <ul class="contributiUl" id="contributiUl">
           <li>Contributi ricevuti per l'anno 2019</li>
           <li>Contributi ricevuti</li>
         </ul>
       </li>
     </ul>
-    <button>Contatti e Segreteria</button>
-    <button>Iscrizioni</button>
-    <button>Foto</button>
+    <button mat-button>Contatti e Segreteria</button>
+    <button mat-button>Iscrizioni</button>
+    <button mat-button>Foto</button>
   </div>
     <div class="searchButton">
       <button mat-icon-button class="example-icon" aria-label="Example icon-button with search icon">
