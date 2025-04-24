@@ -2,11 +2,10 @@
   <div>
 
     <!----Barra di ricerca---->
-    <mat-form-field *ngIf="showSearchBar" appearance="outline">
+    <mat-form-field *ngIf="showSearchBar" appearance="outline" class="searchBar">
       <mat-label>Search...</mat-label>
-      <input matInput [(ngModel)]="searchTerm" (keyup.enter)="executeSearch()">
+      <input matInput [(ngModel)]="searchTerm" (keyup.enter)="executeSearch()" class="searchBar">
       <button mat-icon-button matSuffix class="example-icon" aria-label="Example icon-button with close icon" (click)="openSearchBar()"><mat-icon>close</mat-icon></button>
-        <mat-icon>close</mat-icon>
     </mat-form-field>
 
     <!---Collegamenti alle altre pagine--->

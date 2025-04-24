@@ -70,3 +70,7 @@ button{
   margin-left: auto;
   padding-right: 2.5rem;
 }
+
+.searchBar{
+  color: white !important;
+}
