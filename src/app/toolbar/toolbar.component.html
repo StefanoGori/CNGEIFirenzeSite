@@ -5,28 +5,28 @@
     <mat-form-field *ngIf="showSearchBar" appearance="outline" class="searchBar">
       <mat-label>Search...</mat-label>
       <input matInput [(ngModel)]="searchTerm" (keyup.enter)="executeSearch()" class="searchBar">
-      <button mat-icon-button matSuffix class="example-icon" aria-label="Example icon-button with close icon" (click)="openSearchBar()"><mat-icon>close</mat-icon></button>
+      <button mat-icon-button matSuffix class="example-icon" aria-label="Example icon-button with close icon" (click)="closeSearchBar()"><mat-icon>close</mat-icon></button>
     </mat-form-field>
 
     <!---Collegamenti alle altre pagine--->
     <button mat-button (click)="openChiSiamoUl()">Chi Siamo</button>
     <ul class="chiSiamoUl" id="chiSiamoUl">
-      <li>La sezione</li>
-      <li>Storia</li>
-      <li>Gruppi</li>
-      <li>Il Clan della Torre</li>
-      <li>Sostenitori</li>
+      <li><button mat-button (click)="goToLaSezione()">La sezione</button></li>
+      <li><button mat-button (click)="goToStoria()">Storia</button></li>
+      <li><button mat-button (click)="goToGruppi()">Gruppi</button></li>
+      <li><button mat-button (click)="goToClan()">Il Clan della Torre</button></li>
+      <li><button mat-button (click)="goToSostenitori()">Sostenitori</button></li>
       <li class="contributiWrapper">
         <button mat-button (click)="openContributiUl()">Il tuo 5x1000 alla sezione di Firenze del CNGEI</button>
         <ul class="contributiUl" id="contributiUl">
-          <li>Contributi ricevuti per l'anno 2019</li>
-          <li>Contributi ricevuti</li>
+          <li><button mat-button (click)="goToContributi2019()">Contributi ricevuti per l'anno 2019</button></li>
+          <li><button mat-button (click)="goToContributi()">Contributi ricevuti</button></li>
         </ul>
       </li>
     </ul>
-    <button mat-button>Contatti e Segreteria</button>
-    <button mat-button>Iscrizioni</button>
-    <button mat-button>Foto</button>
+    <button mat-button (click)="goToSegreteria()">Contatti e Segreteria</button>
+    <button mat-button (click)="goToIscrizioni()">Iscrizioni</button>
+    <button mat-button (click)="goToFoto()">Foto</button>
   </div>
 
   <!---Tasto x apertura barra di ricerca--->
@@ -36,4 +36,6 @@
       </button>
     </div>
   </mat-toolbar>
+  
+
   

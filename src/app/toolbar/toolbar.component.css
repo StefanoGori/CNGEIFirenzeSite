@@ -57,6 +57,10 @@
   margin-left: 0.5rem;
 }
 
+.contributiUl button{
+  decoration:none;
+}
+
 .contributiUl.visible {
   display: block;
 }

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ToolbarComponent } from "../toolbar/toolbar.component";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-header',
@@ -9,4 +10,12 @@ import { ToolbarComponent } from "../toolbar/toolbar.component";
 })
 export class HeaderComponent {
 
+  constructor(private router: Router) { }
+
+  goToHome(){
+    this.router.navigate(['/home']);
+  }
+
 }
+
+
