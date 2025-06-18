@@ -16,6 +16,24 @@ mat-grid-tile {
   flex-direction: column;
 }
 
+mat-grid-tile .mat-grid-tile-content {
+  padding: 0 !important;
+  margin: 0 !important;
+  height: auto !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+
+
+mat-grid-list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 .articoli-recenti{
     flex-direction: column;
     align-items: center;
