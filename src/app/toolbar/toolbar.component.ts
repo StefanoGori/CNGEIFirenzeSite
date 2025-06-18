@@ -17,7 +17,10 @@ import { Router } from '@angular/router';
 export class ToolbarComponent {
   showSearchBar=false;
   searchTerm='';
+  showChiSiamoUl = false;
+
   constructor(private router: Router) { }
+
   openChiSiamoUl(){
     const chiSiamoUl=document.getElementById('chiSiamoUl');
     chiSiamoUl?.classList.toggle('visible');

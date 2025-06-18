@@ -9,18 +9,18 @@
     </mat-form-field>
 
     <!---Collegamenti alle altre pagine--->
-    <button mat-button (click)="openChiSiamoUl()">Chi Siamo</button>
+    <button mat-button (click)="openChiSiamoUl()" (mouseenter)="showChiSiamoUl = true" (mouseleave)="showChiSiamoUl = false">Chi Siamo</button>
     <ul class="chiSiamoUl" id="chiSiamoUl">
-      <li><button mat-button (click)="goToLaSezione()">La sezione</button></li>
-      <li><button mat-button (click)="goToStoria()">Storia</button></li>
-      <li><button mat-button (click)="goToGruppi()">Gruppi</button></li>
-      <li><button mat-button (click)="goToClan()">Il Clan della Torre</button></li>
-      <li><button mat-button (click)="goToSostenitori()">Sostenitori</button></li>
+      <li><button mat-button (click)="goToLaSezione()" class="liButton">La sezione</button></li>
+      <li><button mat-button (click)="goToStoria()" class="liButton">Storia</button></li>
+      <li><button mat-button (click)="goToGruppi()" class="liButton">Gruppi</button></li>
+      <li><button mat-button (click)="goToClan()" class="liButton">Il Clan della Torre</button></li>
+      <li><button mat-button (click)="goToSostenitori()" class="liButton">Sostenitori</button></li>
       <li class="contributiWrapper">
-        <button mat-button (click)="openContributiUl()">Il tuo 5x1000 alla sezione di Firenze del CNGEI</button>
+        <button mat-button (click)="openContributiUl()" class="liButton">Il tuo 5x1000 alla sezione di Firenze del CNGEI</button>
         <ul class="contributiUl" id="contributiUl">
-          <li><button mat-button (click)="goToContributi2019()">Contributi ricevuti per l'anno 2019</button></li>
-          <li><button mat-button (click)="goToContributi()">Contributi ricevuti</button></li>
+          <li><button mat-button (click)="goToContributi2019()" class="liButton">Contributi ricevuti per l'anno 2019</button></li>
+          <li><button mat-button (click)="goToContributi()" class="liButton">Contributi ricevuti</button></li>
         </ul>
       </li>
     </ul>

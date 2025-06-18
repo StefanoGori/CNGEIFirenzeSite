@@ -1,1 +1,17 @@
-<p>home works!</p>
+<mat-grid-list cols="2">
+<mat-grid-tile>
+    <swiper-container slides-per-view="1"  pagination="true" autoplay-delay="3000">
+        <swiper-slide *ngFor="let article of articles.slice(0,4)">
+            <h3>{{ article.title }}</h3>
+        </swiper-slide>
+    </swiper-container>
+</mat-grid-tile>
+<mat-grid-tile>
+    <div class="articoli-recenti">
+        <h2>Articoli recenti</h2>
+        <ul>
+            <li *ngFor="let article of articles.slice(0,10)">{{ article.title }}</li>
+        </ul>
+    </div>
+</mat-grid-tile>
+</mat-grid-list>

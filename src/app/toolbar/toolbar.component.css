@@ -3,8 +3,7 @@
 }
 
 ::ng-deep .mat-toolbar{
-    background-color: rgba(41, 41, 41, 0) !important;
-  -webkit-backdrop-filter: blur(5px);
+  background-color: rgba(41, 41, 41, 0) !important;
   color: white !important;
   box-shadow: none;
   padding: 1rem 2rem;
@@ -14,7 +13,6 @@
 ::ng-deep .mat-icon {
   color: white !important;
 }
-
 
 .chiSiamoUl {
   display: none;
@@ -55,10 +53,6 @@
   z-index: 100;
   list-style: none;
   margin-left: 0.5rem;
-}
-
-.contributiUl button{
-  decoration:none;
 }
 
 .contributiUl.visible {
