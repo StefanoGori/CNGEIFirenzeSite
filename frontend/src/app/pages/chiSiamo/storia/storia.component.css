@@ -1,0 +1,44 @@
+:host {
+  display: block;
+  padding: 32px 16px;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: "Arial", sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Titolo principale */
+h2 {
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  padding-left: 8px;
+}
+
+/* Sottotitoli (paragrafi descrittivi) */
+h3 {
+  font-weight: 400;
+  font-size: 1.15rem;
+  margin: 20px 0 16px 0;
+  text-align: left;
+  line-height: 1.4;
+}
+
+/* Immagini centrali e responsive */
+img {
+   width: 100%;
+  max-width: 100%;
+  height: 300px;        /* Altezza maggiore rispetto a prima */
+  object-fit: cover;    /* Ritaglia l’immagine mantenendo proporzioni */
+  border-radius: 8px;
+  margin: 16px 0 32px 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  display: block;
+}
+
+div > img{
+    margin-top: 0;
+    margin-bottom: 32px;
+}

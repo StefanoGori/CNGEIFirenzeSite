@@ -1,15 +1,16 @@
 swiper-container {
   width: 100%;
-  height: 300px;
   display: block;
 }
 
 swiper-slide {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
+  width: 100%;
+  height: auto;
   font-size: 1.5rem;
-  background-color: #ddd;
+  background-color: transparent;
 }
 mat-grid-tile {
   display: flex;
@@ -20,6 +21,7 @@ mat-grid-tile .mat-grid-tile-content {
   padding: 0 !important;
   margin: 0 !important;
   height: auto !important;
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -40,3 +42,69 @@ mat-grid-list {
     margin-top: 0;
     margin-bottom: 1px;
 }
+
+.article-card {
+  width: 100%;
+  margin: 8px auto;
+  max-width: 300px;
+  height: 100%; 
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.article-card:hover{
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.article-card mat-card-header {
+  padding-bottom: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.article-card mat-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.article-card img[mat-card-image] {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px 8px 8px 8px;
+}
+
+.article-card mat-card-content {
+  padding: 8px 16px;
+  flex-grow: 1;
+}
+
+.article-card mat-card-actions {
+  padding: 8px 16px;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #eee;
+}
+
+.article-card button[mat-filled-button] {
+  background-color: #1976d2; /* colore blu Material */
+  color: white;
+  font-weight: 600;
+  padding: 6px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.article-card button[mat-filled-button]:hover {
+  background-color: #155fa0;
+}
+
+

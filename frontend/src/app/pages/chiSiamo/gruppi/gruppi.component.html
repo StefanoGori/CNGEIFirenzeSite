@@ -1,1 +1,17 @@
-<p>gruppi works!</p>
+<div>
+    <h2>GRUPPI</h2>
+</div>
+<div class="page_content">
+  <p>Nel territorio fiorentino il CNGEI è presente con <strong>sei</strong> <strong>gruppi</strong>. Ogni gruppo ha tre “unità”: branco (età 8-11), reparto (12-15), compagnia (16-19).</p>
+
+  <dl>
+    <ng-container *ngFor="let gruppo of gruppi">
+        <dt><strong>{{gruppo.nome}}</strong></dt>
+        <dd>{{gruppo.descrizione}}</dd>
+    </ng-container>
+  </dl>
+
+  <p>Tutti i gruppi sono autonomi dal punto di vista organizzativo e coordinati da un <strong>Capo Gruppo</strong> che ne è il responsabile.</p>
+
+  <p>Per informazioni ed iscrizione è comunque necessario fare riferimento alla <a [routerLink]="['/iscrizioni']">segreteria</a>.</p>
+</div>
