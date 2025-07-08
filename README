@@ -14,3 +14,16 @@ SITO
 URGENTE
 - 5x1000
 - Front con mail + form google vecchio iscrizioni
+
+===========FRONTEND================
+1. Finire tutte le pagine
+  1.1 Fare pagina 5x1000
+  1.2 Inserire mail giusta + Form Google vecchio x iscriversi
+2. Rifare il CSS (Angular Materials + Boostsrap)
+3. Aggiungere cose richieste da GdL liste d'attesa
+
+===========BACKEND=================
+1. Rifare il DB da 0
+2. Fare tutto il backend (Spring + Spring Security + Spring JPA)
+3. Sentire nazionale x API Liste d'attesa
+4. Implementare richieste GdL liste d'attesa
