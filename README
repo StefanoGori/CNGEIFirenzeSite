@@ -17,8 +17,8 @@ URGENTE
 
 ===========FRONTEND================
 1. Finire tutte le pagine
-  1.1 Fare pagina 5x1000
-  1.2 Inserire mail giusta + Form Google vecchio x iscriversi
+  1.1. Fare pagina 5x1000
+  1.2. Inserire mail giusta + Form Google vecchio x iscriversi
 2. Rifare il CSS (Angular Materials + Boostsrap)
 3. Aggiungere cose richieste da GdL liste d'attesa
 
@@ -27,3 +27,8 @@ URGENTE
 2. Fare tutto il backend (Spring + Spring Security + Spring JPA)
 3. Sentire nazionale x API Liste d'attesa
 4. Implementare richieste GdL liste d'attesa
+
+===========DATABASE================
+1. Finire di settare le tabelle di adulti, gruppi e ruoli
+2. Creare le tabelle per la gestione del sito
+3. Normalizzare tutto il DB
